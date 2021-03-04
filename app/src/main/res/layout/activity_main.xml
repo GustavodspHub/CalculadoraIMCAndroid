@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="#CAFACC">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background="@drawable/logo"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso: "
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/edit_peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Seu Peso, ex. 57.500"
+        android:textColor="@android:color/holo_purple" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altura: "
+        android:layout_marginTop="48dp"
+        android:textColor="@android:color/black"/>/>
+
+    <EditText
+        android:id="@+id/edit_altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Sua altura, ex. 1,70"
+        android:layout_marginBottom="48dp"
+        android:textColor="@android:color/holo_purple"/>
+
+    <Button
+        android:id="@+id/button_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:background="@color/colorPrimaryDark"/>
+
+
+    <TextView
+        android:id="@+id/text_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="@android:color/black"
+        android:textSize="48sp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
